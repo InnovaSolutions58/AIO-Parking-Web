@@ -1,0 +1,133 @@
+@media screen and (max-width:700px) {
+
+    @font-face {
+        font-family: Roboto;
+        src: url(../fonts/Roboto-Regular.ttf);
+    }
+
+    .PAGINAPRINCIPAL {
+        display: none;
+    }
+
+    .PAGINAPRINCIPALDISP {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #inicioDisp {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .informacionDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo1.png) no-repeat center;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+    }
+
+    .imagenAIOParkingDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo2.png) no-repeat center;
+        background-size: 100vw 100vh;
+    }
+
+    .parkingAreaDisp {
+        width: 90vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/ParkingArea.png) no-repeat center;
+        background-size: 90vw 50vh;
+        flex-direction: column;
+    }
+
+    #ubicacionDisp {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .informacionDeUbicacionDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo1.png) no-repeat center;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+    }
+
+    .mapaDeUbicacionDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo2.png) no-repeat center;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+    }
+
+    #serviciosDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo1.png) no-repeat center;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+    }
+
+    #acercaDeNosotrosDisp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/Fondo2.png) no-repeat center;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+    }
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #copyrightDisp {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(#336699, #66ccff);
+        font-family: Roboto;
+        font-size: 20px;
+        text-align: center;
+    }
+}

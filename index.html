@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Hojas de estilo normales -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" href="./img/LogoGrandeAIOParking.png">
+    <title>AIO Parking</title>
+</head>
+
+<body>
+    <!-- Páginas en dispositivos grandes -->
+    <div class="PAGINAPRINCIPAL">
+
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="nombre">
+                <marquee class="empresa">AIO Parking</marquee>
+            </div>
+            <div class="botones">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#acercaDeNosotros">Acerca de Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="inicio">
+            <div class="informacion">
+                <h1 class="titulo"><b>¡Bienvenid@ a AIO Parking (All In One Parking)!</b></h1>
+                <br>
+                <p class="texto1">
+                    AIO Parking, ubicado en el barrio Jacinto Vera, es más que un simple estacionamiento.
+                    Ofrecemos servicios integrales que incluyen lavado de autos, alineación y balanceo,
+                    además de la venta de neumáticos de las mejores marcas. Nuestro objetivo es brindar
+                    soluciones cómodas y confiables para todos los conductores, con un enfoque en la
+                    seguridad y la calidad del servicio. Ya sea que necesites estacionamiento por horas,
+                    días o meses, en AIO Parking encontrarás un espacio seguro y una variedad de servicios
+                    para el cuidado de tu vehículo.
+                </p>
+                <button id="boton1" onclick="irAServicios()">Descubre más!</button>
+            </div>
+
+            <div class="imagenAIOParking">
+                <div class="parkingArea"></div>
+            </div>
+        </section>
+
+        <section id="ubicacion">
+            <div class="informacionDeUbicacion">
+                <p class="texto2">
+                    <mark>AIO Parking se encuentra ubicado en la calle Av. Luis Alberto de Herrera, entre Marne y
+                        Gualeguay.</mark>
+                </p>
+            </div>
+
+            <div class="mapaDeUbicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.502855291679!2d-56.171464624985994!3d-34.86871707286036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f807ab9ea155b%3A0x3b4edf63fa05987f!2sMarne%20%26%20Avenida%20Luis%20Alberto%20de%20Herrera%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1726732021071!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="carousel">
+                <button class="prev">←</button>
+                <div class="carousel-container">
+                    <div class="card">
+                        <h3><u>Parking</u></h3>
+                        <p>Estacionamiento para autos, camionetas, motos y pequeños utilitarios, con tarifas por hora,
+                            día o mes.</p>
+                        <img src="img/Parking.jpeg" alt="Parking" width="180" height="180">
+                    </div>
+                    <div class="card">
+                        <h3><u>Lavadero</u></h3>
+                        <p>Lavado de vehículos, disponible para motos, autos, camionetas y pequeños camiones.</p>
+                        <img src="img/Lavadero.jpeg" alt="Lavadero" width="180" height="180">
+                    </div>
+                    <div class="card">
+                        <h3><u>Alineación y Balanceo</u></h3>
+                        <p>Servicio especializado para alineación de trenes y balanceo de neumáticos.</p>
+                        <img src="img/Alineacion&Balanceo.jpeg" alt="Alineaci+on y Balanceo" width="180" height="180">
+                    </div>
+                    <div class="card">
+                        <h3><u>Venta de Neumáticos</u></h3>
+                        <p>Comercialización de neumáticos de marcas como Michelin, Bridgestone y Pirelli.</p>
+                        <img src="img/VentaDeNeumaticos.jpeg" alt="Venta de Neumáticos" width="180" height="180">
+                    </div>
+                </div>
+                <button class="next">→</button>
+            </div>
+        </section>
+
+        <section id="acercaDeNosotros">
+            <div class="video">
+                <video controls src="vid/AIO Parking.mp4" type="video/mp4" class="videoAcercaDeNosotros"
+                    poster="img/LogoGrandeAIOParking.png"></video>
+                <h1 style="color: white; font-family: Roboto; font-size: 40px;">Acerca de AIO Parking</h1>
+            </div>
+        </section>
+
+        <section id="copyright">
+            <p>© 2024 AIO Parking. Todos los derechos reservados. Página creada por Innova Solutions.</p>
+        </section>
+    </div>
+
+    <!-- Página en dispositivos pequeños -->
+    <div class="PAGINAPRINCIPALDISP">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./img/LogoAIOParkingConFondo.png" alt="Logo AIO Parking" width="40" height="40">
+                <a class="navbar-brand" href="#">AIO Parking (All In One Parking)</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicioDisp">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubicacionDisp">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#serviciosDisp">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acercaDeNosotrosDisp">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="inicioDisp">
+            <div class="informacionDisp">
+                <h1 class="titulo"><b>¡Bienvenid@ a AIO Parking (All In One Parking)!</b></h1>
+                <br>
+                <p class="texto1">
+                    AIO Parking, ubicado en el barrio Jacinto Vera, es más que un simple estacionamiento.
+                    Ofrecemos servicios integrales que incluyen lavado de autos, alineación y balanceo,
+                    además de la venta de neumáticos de las mejores marcas. Nuestro objetivo es brindar
+                    soluciones cómodas y confiables para todos los conductores, con un enfoque en la
+                    seguridad y la calidad del servicio. Ya sea que necesites estacionamiento por horas,
+                    días o meses, en AIO Parking encontrarás un espacio seguro y una variedad de servicios
+                    para el cuidado de tu vehículo.
+                </p>
+                <button id="boton1" onclick="irAServiciosDisp()">Descubre más!</button>
+            </div>
+
+            <div class="imagenAIOParkingDisp">
+                <div class="parkingAreaDisp"></div>
+            </div>
+        </section>
+
+        <section id="ubicacionDisp">
+            <div class="informacionDeUbicacionDisp">
+                <p class="texto2">
+                    <mark>AIO Parking se encuentra ubicado en la calle Av. Luis Alberto de Herrera, entre Marne y
+                        Gualeguay.</mark>
+                </p>
+            </div>
+
+            <div class="mapaDeUbicacionDisp">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.502855291679!2d-56.171464624985994!3d-34.86871707286036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f807ab9ea155b%3A0x3b4edf63fa05987f!2sMarne%20%26%20Avenida%20Luis%20Alberto%20de%20Herrera%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1727421724639!5m2!1ses-419!2suy"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="serviciosDisp">
+            <h1 class="titulo"> <u>Servicios de AIO Parking</u></h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Parking
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Estacionamiento para autos, camionetas, motos y pequeños utilitarios, con tarifas por hora,
+                            día o mes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lavadero
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lavado de vehículos, disponible para motos, autos, camionetas y pequeños camiones.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Alineación y Balanceo
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Servicio especializado para alineación de trenes y balanceo de neumáticos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Venta de Neumáticos
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Comercialización de neumáticos de marcas como Michelin, Bridgestone y Pirelli.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acercaDeNosotrosDisp">
+            <div class="video">
+                <video controls src="vid/AIO Parking.mp4" type="video/mp4"
+                    poster="img/LogoGrandeAIOParking.png"></video>
+                <h1 style="color: white; font-family: Roboto; font-size: 40px;">Acerca de AIO Parking</h1>
+            </div>
+        </section>
+
+        <section id="copyrightDisp">
+            <p>© 2024 AIO Parking. Todos los derechos reservados. Página creada por Innova Solutions.</p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.menu {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/LogoGrandeAIOParking.png) no-repeat center;
+    background-size: 10vw 15vh;
+}
+
+.nombre {
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+.empresa {
+    color: white;
+}
+
+.botones {
+    width: 65vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    justify-content: flex-end;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #80BFFF;
+}
+
+#inicio {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/Fondo1.png) no-repeat center;
+    background-size: 50vw 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.texto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Roboto;
+    color: black;
+    text-align: center;
+}
+
+#boton1 {
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid rgb(248, 244, 248);
+    background: rgb(0, 170, 228);
+    border-radius: 40px;
+    font-family: Roboto;
+    font-size: 12px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+}
+
+#boton1:hover {
+    background: rgba(141, 149, 168, 0.9);
+}
+
+.imagenAIOParking {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/Fondo2.png) no-repeat center;
+    background-size: 50vw 100vh;
+}
+
+.parkingArea {
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/ParkingArea.png) no-repeat center;
+    background-size: 30vw 60vh;
+}
+
+#ubicacion {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/FondoAIOParking2.jpeg) no-repeat center;
+    background-size: 100vw 100vh;
+}
+
+.informacionDeUbicacion {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Roboto;
+    color: black;
+    text-align: center;
+}
+
+mark {
+    background-color: white;
+}
+
+.mapaDeUbicacion {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicios {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/FondoAIOParking3.png) no-repeat center;
+    background-size: 100vw 100vh;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    min-width: 300px;
+    height: 400px;
+    background-color: #8C8C8C;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Roboto;
+    flex-direction: column;
+    text-align: center;
+}
+
+button.next,
+button.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+#acercaDeNosotros {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/FondoAIOParking4.png) no-repeat center;
+    background-size: 100vw 100vh;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoAcercaDeNosotros {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#6e6e6e, #c0c0c0);
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.PAGINAPRINCIPALDISP {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
